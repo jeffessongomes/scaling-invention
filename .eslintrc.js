@@ -28,5 +28,6 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-console': 'off',
     'react/no-danger': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
   },
 };

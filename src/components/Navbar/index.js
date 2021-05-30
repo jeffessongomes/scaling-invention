@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <>
-      <Container className={`${isOpen && 'd-none'}`}>
+      <Container className={`${isOpen && 'd-none'} fixed-top`}>
         <Row>
           <Col lg={12}>
             <nav className="menu">
