@@ -1,23 +1,23 @@
-.footerCard{
+.footerCard {
   z-index: 1 !important;
 
-  background: url('../../assets/img/bg-footer.png');
+  background: url("../../assets/img/bg-footer.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @media only screen and (max-width: 992px) {
-    background: url('../../assets/img/bg-footerMobile.png');
+    background: url("../../assets/img/bg-footerMobile.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  .footerCard__content{
+  .footerCard__content {
     width: 100%;
-    background: rgba(18,18,18, .75);
+    background: rgba(18, 18, 18, 0.75);
 
-    .footerCard__content--h2{
+    .footerCard__content--h2 {
       padding: 65px 0 106px 0;
       margin: 0;
 
@@ -25,28 +25,28 @@
       font-weight: bold;
 
       font-family: Lexend;
-      color: #FFFFFF;
+      color: #ffffff;
     }
   }
 }
 
-.footerCardMobile, .footerCardDesktop{
+.footerCardMobile,
+.footerCardDesktop {
   margin-top: -65px;
 }
 
-.footerCard__containerButton{
+.footerCard__containerButton {
   display: flex;
   justify-content: center;
   align-items: center;
 
   margin-top: 30px;
 
-
-  border-bottom: 1px solid #BAC7D3;
+  border-bottom: 1px solid #bac7d3;
   width: 90% !important;
   margin-left: 17px;
 
-  .footerCard__containerButton--buttonViewMore{
+  .footerCard__containerButton--buttonViewMore {
     display: flex;
     align-items: center;
 
@@ -54,7 +54,7 @@
     font-size: 22px;
     font-family: Lexend;
 
-    svg{
+    svg {
       margin-left: 10px;
     }
 
@@ -62,12 +62,17 @@
   }
 }
 
-.containerFooterForm{
-  background: #121212 url('../../assets/img/footer.png');
+.containerFooterForm {
+  background: #121212 url("../../assets/img/footer.png");
   background-repeat: no-repeat;
-  background-position: 5% 110%;
-  background-size: 900px;
 
+  background-position: 5% 110%;
+  background-size: 1200px;
+
+  @media only screen and (min-width: 992px) {
+    background-position: 180% 150%;
+    background-size: 1350px;
+  }
 
   padding: 94px 0 0 0;
   margin: 74px 0 0 0;

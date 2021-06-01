@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 import { Container, Row, Col } from 'react-bootstrap';
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -12,6 +14,8 @@ import './styles.scss';
 import { setMenu } from '../../ducks/appSlice';
 
 const Navbar = () => {
+  const [activeColor, setActiveColor] = useState(false);
+
   const dispatch = useDispatch();
 
   const {
@@ -22,9 +26,21 @@ const Navbar = () => {
     dispatch(setMenu(!isOpen));
   }
 
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 10) {
+        setActiveColor(true);
+      } else {
+        setActiveColor(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  }, [window.scrollY]);
+
   return (
     <>
-      <Container className={`${isOpen && 'd-none'} fixed-top`}>
+      <Container className={`${isOpen && 'd-none'} fixed-top ${activeColor && 'activeColor'}`}>
         <Row>
           <Col lg={12}>
             <nav className="menu">

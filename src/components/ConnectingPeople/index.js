@@ -8,24 +8,61 @@ import './styles.scss';
 
 const ConnectingPeople = () => (
   <Container>
-    <Row>
-      <Col>
-        <div className="containerConnectingPeople">
-          <h3 className="containerConnectingPeople__h3">Conectando empresas e pessoas</h3>
-          <p className="containerConnectingPeople__p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Libero rerum enim culpa dolorum placeat officiis praesentium non?
-            Perferendis doloribus dignissimos illum.
-            Autem minus expedita obcaecati quam dolor doloribus omnis corrupti!
-          </p>
-        </div>
+    <Row className="containerConnectingPeople">
+      <Col lg={5} sm={12}>
+        <h3 className="containerConnectingPeople__h3">
+          Conectando empresas
+          <br className="d-none d-lg-block" />
+          e pessoas
+        </h3>
+      </Col>
+      <Col lg={7} sm={12}>
+        <p className="containerConnectingPeople__p">
+          Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+          Aenean at lectus magna.
+          Integer gravida est diam,
+          et cursus magna iaculis at.
+          Etiam ornare molestie odio,
+          non sagittis lorem convallis a. Vivamus lacus libero,
+          commodo ullamcorper nunc et,
+          commodo varius diam. Donec rutrum,
+          sem vel vulputate efficitur,
+          mauris est dapibus erat,
+          quis aliquet tellus massa vitae nisl.
+        </p>
       </Col>
     </Row>
-    <Row className="imagesMobile">
-      <Col sm={12}>
+    <Row className="imagesMobile d-lg-none d-flex">
+      <Col className="imagesMobile__image">
         <ImageConnecting text="Salas para startups" image={SalaStartups} />
       </Col>
-      <Col sm={12}>
+      <Col className="imagesMobile__image">
+        <ImageConnecting text="Salas para startups" image={SalaStartups} />
+      </Col>
+      <Col className="imagesMobile__image">
+        <ImageConnecting text="Salas para startups" image={SalaStartups} />
+      </Col>
+    </Row>
+    <Row className="d-none d-lg-flex">
+      <Col lg={6} className="imagesDesktop__image--first">
+        <ImageConnecting text="Salas para startups" image={SalaStartups} />
+      </Col>
+      <Col lg={3} className="imagesDesktop__image--second">
+        <ImageConnecting text="Salas para startups" image={SalaStartups} />
+      </Col>
+      <Col lg={3} className="imagesDesktop__image">
+        <ImageConnecting text="Salas para startups" image={SalaStartups} />
+      </Col>
+    </Row>
+    <Row className="d-none d-lg-flex imagesDesktop">
+      <Col lg={3} className="imagesDesktop__image--first">
+        <ImageConnecting text="Salas para startups" image={SalaStartups} />
+      </Col>
+      <Col lg={3} className="imagesDesktop__image--second">
+        <ImageConnecting text="Salas para startups" image={SalaStartups} />
+      </Col>
+      <Col lg={6} className="imagesDesktop__image">
         <ImageConnecting text="Salas para startups" image={SalaStartups} />
       </Col>
     </Row>
