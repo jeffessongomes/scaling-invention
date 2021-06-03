@@ -1,10 +1,23 @@
 .activeColor{
-  background-color: #ffffff;
+  margin-top: -27px !important;
+  padding-bottom: 5px;
+
+  background-color: #ffffff !important;
   box-shadow: 0px 0px 12px #0000001F;
 
   width: 100%;
+  .menu__list--link{
+    color: #121212 !important;
+  }
 
-  color: #000000;
+  .button-link{
+    color: #FFFFFF !important;
+  }
+
+  .menu__brand{
+    color: #121212 !important;
+  }
+
 }
 
 .menuMobile {
@@ -133,7 +146,7 @@
 
     font-family: "Lexend";
     color: #ffffff;
-    font-size: 28px;
+    font-size: 32px;
 
     .title {
       font-weight: 900;

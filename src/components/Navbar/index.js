@@ -40,36 +40,40 @@ const Navbar = () => {
 
   return (
     <>
-      <Container className={`${isOpen && 'd-none'} fixed-top ${activeColor && 'activeColor'}`}>
+      <Container fluid className={`${isOpen && 'd-none'} ${activeColor && 'activeColor'} fixed-top`}>
         <Row>
-          <Col lg={12}>
-            <nav className="menu">
-              <button type="button" onClick={handleOpenMenu} className="menu__buttonMobile">
-                <HiMenu size="32" color="#FFFFFF" />
-              </button>
-              <div className="menu__brand">
-                <span className="title">tbridge.</span>
-                co
-              </div>
-              <div className="menu__content">
-                <li className="menu__list">
-                  <Link to="/" className="menu__list--link">Home</Link>
-                </li>
-                <li className="menu__list">
-                  <Link to="/" className="menu__list--link">Conheça</Link>
-                </li>
-                <li className="menu__list">
-                  <Link to="/" className="menu__list--link">Eventos</Link>
-                </li>
-                <li className="menu__list">
-                  <Link to="/" className="menu__list--link">Fale Conosco</Link>
-                </li>
-                <li className="menu__list">
-                  <Button className="menu__list--link" title="Participe" link="/" />
-                </li>
-              </div>
-            </nav>
-          </Col>
+          <Container>
+            <Row>
+              <Col lg={12}>
+                <nav className="menu">
+                  <button type="button" onClick={handleOpenMenu} className="menu__buttonMobile">
+                    <HiMenu size="32" color={`${!activeColor ? '#FFFFFF' : '#121212'}`} />
+                  </button>
+                  <div className="menu__brand">
+                    <span className="title">tbridge.</span>
+                    co
+                  </div>
+                  <div className="menu__content">
+                    <li className="menu__list">
+                      <Link to="/" className="menu__list--link">Home</Link>
+                    </li>
+                    <li className="menu__list">
+                      <Link to="/" className="menu__list--link">Conheça</Link>
+                    </li>
+                    <li className="menu__list">
+                      <Link to="/" className="menu__list--link">Eventos</Link>
+                    </li>
+                    <li className="menu__list">
+                      <Link to="/" className="menu__list--link">Fale Conosco</Link>
+                    </li>
+                    <li className="menu__list">
+                      <Button className="menu__list--link button-link" title="Participe" link="/" />
+                    </li>
+                  </div>
+                </nav>
+              </Col>
+            </Row>
+          </Container>
         </Row>
       </Container>
       <nav className={`menuMobile ${isOpen && 'd-flex'}`}>

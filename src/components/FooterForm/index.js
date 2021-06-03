@@ -13,14 +13,24 @@ import './styles.scss';
 const FooterForm = () => (
   <Container>
     <Row>
-      <Col sm={12} lg={8}>
-        <form className="containerForm">
-          <div className="containerForm__description">
-            <h3 className="containerForm__description--h3">Vamos conversar um pouco?</h3>
+      <Col sm={12} lg={12}>
+        <div className="containerForm">
+          <div className="conteinarForm containerForm__description">
+            <h3 className="containerForm__description--h3">
+              Vamos conversar
+              <br />
+              um pouco?
+            </h3>
             <p className="containerForm__description--p">
               Utilize o formulário para entrar em contato conosco.
             </p>
           </div>
+        </div>
+      </Col>
+    </Row>
+    <Row>
+      <Col sm={12} lg={7}>
+        <form className="containerForm">
           <Input name="Seu Nome" />
           <Input name="Seu Telefone" />
           <Input name="Seu Email" />
@@ -30,7 +40,7 @@ const FooterForm = () => (
           </div>
         </form>
       </Col>
-      <Col sm={12} lg={4}>
+      <Col sm={12} lg={5}>
         <div className="containerInfo">
           <div className="containerInfo__address">
             <strong>Endereço:</strong>
