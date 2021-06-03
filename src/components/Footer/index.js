@@ -64,13 +64,19 @@ const Footer = () => (
       </Container>
     </Row>
     <Row>
-      <Col sm={12} className="footerCard__containerButton">
-        <Link to="/" className="footerCard__containerButton--buttonViewMore">
-          Ver mais
-          {' '}
-          <BsArrowRight size={32} color="#121212" />
-        </Link>
-      </Col>
+      <Container>
+        <Row>
+          <Col sm={12} lg={12}>
+            <div className="footerCard__containerButton">
+              <Link to="/" className="footerCard__containerButton--buttonViewMore">
+                Ver mais
+                {' '}
+                <BsArrowRight size={32} color="#121212" />
+              </Link>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </Row>
     <Row>
       <StartupsLogos />

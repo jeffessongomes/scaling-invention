@@ -21,7 +21,7 @@
       padding: 65px 0 106px 0;
       margin: 0;
 
-      font-size: 36px;
+      font-size: 48px;
       font-weight: bold;
 
       font-family: Lexend;
@@ -43,7 +43,6 @@
   margin-top: 30px;
 
   border-bottom: 1px solid #bac7d3;
-  width: 90% !important;
   margin-left: 17px;
 
   .footerCard__containerButton--buttonViewMore {
@@ -70,8 +69,8 @@
   background-size: 1200px;
 
   @media only screen and (min-width: 992px) {
-    background-position: 180% 150%;
-    background-size: 1350px;
+    background-position: 200% 130%;
+    background-size: 1450px;
   }
 
   padding: 94px 0 0 0;

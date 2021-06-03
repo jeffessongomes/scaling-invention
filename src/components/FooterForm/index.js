@@ -21,9 +21,6 @@ const FooterForm = () => (
               <br />
               um pouco?
             </h3>
-            <p className="containerForm__description--p">
-              Utilize o formulário para entrar em contato conosco.
-            </p>
           </div>
         </div>
       </Col>
@@ -31,11 +28,15 @@ const FooterForm = () => (
     <Row>
       <Col sm={12} lg={7}>
         <form className="containerForm">
+          <p className="containerForm__description--p containerForm__description">
+            Utilize o formulário para entrar em contato conosco.
+            Será um enorme satisfação responder.
+          </p>
           <Input name="Seu Nome" />
           <Input name="Seu Telefone" />
           <Input name="Seu Email" />
           <Input name="Descrição" isTextArea />
-          <div className="d-flex justify-content-end">
+          <div className="d-flex justify-content-end simple__adjust">
             <ButtonDefault text="Enviar mensagem" />
           </div>
         </form>

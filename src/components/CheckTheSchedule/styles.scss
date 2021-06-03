@@ -1,0 +1,68 @@
+.CheckTheSchedule__title{
+  background: #2E34DB;
+  padding: 95px 52px;
+  margin-top: 112px;
+  @media only screen and (min-width: 992px) {
+    height: 100%;
+  }
+
+  .CheckTheSchedule__title--h3{
+    font-size: 46px;
+    font-family: Lexend;
+    text-align: left;
+    font-weight: bold;
+    line-height: 52px;
+    color: #FFFFFF;
+  }
+}
+
+.CarouselEvent{
+  margin-bottom: 112px;
+
+  .carousel-caption{
+    display: flex;
+    align-items: flex-start;
+    flex: 0;
+    flex-direction: column;
+    right: 0;
+    left: 0;
+    margin: 0 26px 18px 26px;
+
+    span{
+      background: #FFFFFF;
+      border-radius: 20px;
+
+      padding: 6px 15px;
+      color: #2E34DB;
+      margin: 0 0 4px 0;
+    }
+
+    h3{
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: Lexend;
+      padding-right: 100px;
+    }
+  }
+
+  .carousel-indicators{
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 0 26px 26px 26px !important;
+
+    li{
+      border: 0;
+      border-radius: 50%;
+      height: 16px;
+      width: 16px;
+      background-color: #2E34DB;
+      opacity: 1;
+      margin: 0 6px 0 0;
+      &.active{
+        background-color: #FFFFFF;
+      }
+    }
+  }
+}

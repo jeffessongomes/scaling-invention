@@ -1,4 +1,8 @@
 .containerForm{
+  .simple__adjust{
+    margin-bottom: 30px;
+  }
+
   .containerForm__description{
     color: #FFFFFF;
     margin: 0;
@@ -9,10 +13,16 @@
       font-family: Lexend;
     }
 
+    @media only screen and (max-width: 992px) {
+      .containerForm__description--h3{
+        font-size: 36px !important;
+      }
+    }
+
     .containerForm__description--p{
       font-family: Lexend;
-      font-size: 18px;
-      margin-top: 16px;
+      font-size: 18px !important;
+      margin-top: 40px;
     }
   }
 
@@ -21,11 +31,17 @@
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .containerInfo{
+    margin-left: 0px !important;
+  }
+}
+
 .containerInfo{
-  margin-left: 50px;
+  margin-left: 70px;
 
   .containerInfo__address{
-    margin-top: 30px;
+    margin-top: 0px;
     color: #FFFFFF;
     font-family: Lexend;
 
