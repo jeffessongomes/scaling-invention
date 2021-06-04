@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { HiMenu } from 'react-icons/hi';
 
@@ -17,6 +17,7 @@ const Navbar = () => {
   const [activeColor, setActiveColor] = useState(false);
 
   const dispatch = useDispatch();
+  const location = useLocation();
 
   const {
     isOpen,
@@ -28,7 +29,7 @@ const Navbar = () => {
 
   useEffect(() => {
     function handleScroll() {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 10 || location.pathname !== '/') {
         setActiveColor(true);
       } else {
         setActiveColor(false);
@@ -37,6 +38,13 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
   }, [window.scrollY]);
+
+  useEffect(() => {
+    console.log(window.location.href);
+    if (location.pathname !== '/') {
+      setActiveColor(true);
+    }
+  }, []);
 
   return (
     <>
