@@ -14,7 +14,7 @@ const CheckTheSchedule = () => (
           <h3 className="CheckTheSchedule__title--h3">Confira a agenda de eventos</h3>
         </div>
       </Col>
-      <Col lg={6} className="CarouselEvent">
+      <Col sm={12} lg={6} className="CarouselEvent">
         <Carousel controls={false}>
           <Carousel.Item>
             <img
