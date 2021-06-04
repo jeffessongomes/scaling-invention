@@ -13,6 +13,7 @@ const ConnectingPeople = () => (
         <h3 className="containerConnectingPeople__h3">
           Conectando empresas
           <br className="d-none d-lg-block" />
+          {' '}
           e pessoas
         </h3>
       </Col>

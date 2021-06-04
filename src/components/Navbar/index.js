@@ -40,7 +40,6 @@ const Navbar = () => {
   }, [window.scrollY]);
 
   useEffect(() => {
-    console.log(window.location.href);
     if (location.pathname !== '/') {
       setActiveColor(true);
     }
