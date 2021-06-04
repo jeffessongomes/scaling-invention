@@ -11,6 +11,7 @@
       font-weight: bold;
       font-size: 72px;
       font-family: Lexend;
+      margin-bottom: 40px;
     }
 
     @media only screen and (max-width: 992px) {
@@ -22,7 +23,7 @@
     .containerForm__description--p{
       font-family: Lexend;
       font-size: 18px !important;
-      margin-top: 40px;
+      top: 24px !important;
     }
   }
 
