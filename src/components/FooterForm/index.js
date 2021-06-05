@@ -52,7 +52,7 @@ const FooterForm = () => (
             <p>(84) 99999-9999 / 88888-88888</p>
           </div>
           <div className="containerSocial">
-            <strong>Telefone:</strong>
+            <strong>Nossas Redes:</strong>
             <ul className="containerSocial__lists">
               <li>
                 <a href="https://google.com" target="_blank" rel="noreferrer">
