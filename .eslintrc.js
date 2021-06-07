@@ -29,5 +29,6 @@ module.exports = {
     'no-console': 'off',
     'react/no-danger': 'off',
     'jsx-a11y/label-has-associated-control': 'off',
+    'linebreak-style': 0,
   },
 };
